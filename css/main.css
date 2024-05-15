@@ -14,12 +14,26 @@
 /* Estilo para o cabeçalho */
 header {
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    /* justify-content: center; */
     align-items: center;
-    padding: 1rem;
+    padding: 2rem 1rem 0 1rem;
+    gap: 1rem;
     background-color: var(--header-bg-color);
     color: var(--title-color);
     border-bottom: 0.5rem solid silver;
+}
+
+.header__logo {
+    display: flex;
+    align-items: center;
+}
+
+.header__warning {
+    font-family: "IBM Plex Mono", monospace;
+    font-weight: normal;
+    color: yellow;
+    text-align: center;
 }
 
 /* Estilo para o conteúdo principal */
